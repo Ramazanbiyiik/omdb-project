@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Explorer | OMDb API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1><span class="text-green">Movie</span> <span class="text-darkblue">Explorer</span></h1>
+            <p>Discover details about your favorite movies instantly.</p>
+        </header>
+
+        <main>
+            <div class="search-section">
+                <div class="search-filters">
+                    <input type="text" id="searchInput" placeholder="Enter movie/series title (e.g., Matrix)..." autocomplete="off" required>
+                    <input type="number" id="yearInput" placeholder="Year (e.g., 1999)" min="1900" max="2026">
+                    <select id="typeInput">
+                        <option value="">All Types</option>
+                        <option value="movie">Movie</option>
+                        <option value="series">Series</option>
+                    </select>
+                </div>
+                <button id="searchBtn">Search</button>
+            </div>
+
+            <div id="error-message"></div>
+
+            <div id="movie-details">
+                <p class="welcome-text">Type a movie name above to start your search.</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
