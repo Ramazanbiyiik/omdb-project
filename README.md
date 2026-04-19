@@ -1,5 +1,49 @@
 # OMDB Movie Search Project
 
+A clean, responsive, and performance-optimized Single Page Application built with Vanilla JavaScript. It consumes the OMDb API to help users search for movies and series, utilizing advanced caching mechanisms to minimize redundant API requests.
+
+**[Click here to view the Live Demo](https://ramazanbiyiik.github.io/omdb-project/)**
+
+---
+
+### Screenshots
+
+![Desktop View](./assets/1.png) 
+*Search results and movie detail view*
+![Desktop View](./assets/2.png) 
+*Search results and movie detail view*
+
+---
+
+## Features & Bonus Implementations
+
+This project strictly follows the required assessment guidelines and introduces several bonus functionalities for better performance and user experience:
+
+* **Advanced Search & Filtering:** Users can filter search results not just by title, but also by **Year** and **Type** (Movie or Series) to get more accurate results.
+* **Smart Persistent Caching:** Implemented a highly efficient caching mechanism via `LocalStorage`. If a previously searched movie is queried again, the app fetches the data instantly from the local cache instead of making a redundant API call.
+* **State Retention:** The app survives page refreshes. The last viewed movie data is automatically loaded from the persistent cache without triggering a new network request on reload.
+* **Responsive Modern UI:** Designed with a corporate and clean color palette based on the provided branding. Built with CSS Flexbox to ensure a seamless experience across desktop, tablet, and mobile screens.
+* **Robust Error Handling:** Gracefully handles scenarios like "Movie not found" or network failures with user-friendly UI messages instead of breaking the application.
+
+---
+
+## Technologies Used
+
+* **HTML5 & CSS3** (Flexbox, CSS Variables, Responsive Design)
+* **Vanilla JavaScript** (Async/Await, Fetch API, DOM Manipulation)
+* **Web Storage API** (`LocalStorage` for caching JSON responses)
+* **OMDb API** (External REST API for fetching movie data)
+
+---
+
+## Installation & Local Setup
+
+To run this project locally on your machine:
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/YOUR_USERNAME/omdb-project.git](https://github.com/YOUR_USERNAME/omdb-project.git)
+
 ## How to Set Up Your Repository
 
 **WARNING**: This is a template project. Do not fork this repository.
